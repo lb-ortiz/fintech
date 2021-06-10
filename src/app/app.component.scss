@@ -1,0 +1,24 @@
+.container {
+    background-color: #373a3f;
+    width: 800px;
+}
+
+.row {
+    display: flex;
+    height: 50px;
+}
+
+.logo-column {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #373a3f;
+}
+
+.login-column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #1fd5fe;
+    float: right;
+}
