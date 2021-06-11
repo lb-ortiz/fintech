@@ -7,13 +7,9 @@ import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms
   styleUrls: ['./login-card.component.scss']
 })
 export class LoginCardComponent implements OnInit {
- form: FormGroup = new FormGroup({
-  username: new FormControl(''),
-  password: new FormControl(''),
-});
-  constructor() {
+  form: FormGroup;
 
-   }
+  constructor() {}
 
   ngOnInit(): void {
   }

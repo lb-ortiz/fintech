@@ -14,19 +14,19 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
-  it('deve criar a home', () => {
+  it('deve renderizar a home', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`deve ter o titulo 'fintech'`, () => {
+  it(`deve ter o titulo fintech`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('fintech');
   });
 
-  it('renderiza o titulo title', () => {
+  it('renderiza o titulo', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;

@@ -19,7 +19,7 @@ describe('LoginCardComponent', () => {
     fixture.detectChanges();
   });
 
-  it('deve criar', () => {
+  it('deve renderizar o componente de login', () => {
     expect(component).toBeTruthy();
   });
 });
