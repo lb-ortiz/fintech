@@ -1,1 +1,22 @@
-<p>login-card works!</p>
+<mat-card>
+      <form [formGroup]="form">
+        <div class="row">
+            <span class="title">Login:</span>
+            <span>
+            <mat-form-field class="example-full-width">
+                <span>Usuario</span>
+                <input type="text" matInput placeholder="Username" formControlName="username">
+            </mat-form-field>
+            </span>
+            <span>
+            <mat-form-field>
+                <span>Senha</span>
+                <input type="password" matInput placeholder="Password" formControlName="password">
+            </mat-form-field>
+            </span>
+            <div class="button">
+            <button type="submit" mat-button>Login</button>
+            </div>
+        </div>
+      </form>
+  </mat-card>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
 
 @Component({
   selector: 'app-login-card',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-card.component.scss']
 })
 export class LoginCardComponent implements OnInit {
+ form: FormGroup = new FormGroup({
+  username: new FormControl(''),
+  password: new FormControl(''),
+});
+  constructor() {
 
-  constructor() { }
+   }
 
   ngOnInit(): void {
   }
