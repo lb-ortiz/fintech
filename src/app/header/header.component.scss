@@ -1,8 +1,23 @@
-.angular-logo {
-    margin: 0 4px 3px 0;
-    height: 35px;
-    vertical-align: middle;
-}
 .fill-remaining-space {
     flex: 1 1 auto;
+}
+
+.row {
+    display: flex;
+    height: 50px;
+}
+
+.logo-column {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #373a3f;
+}
+
+.login-column {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #1fd5fe;
+    float: right;
 }

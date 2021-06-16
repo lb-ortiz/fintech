@@ -7,7 +7,7 @@ import { AuthService } from './../auth/auth.service';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent implements OnInit {
-
+  title: 'fintech';
   isLoggedIn$: Observable<boolean>;
 
   constructor(private authService: AuthService) { }

@@ -1,9 +1,16 @@
 <mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
-    <span>
-      Angular NavBar + Login Example #01
-    </span>
-    <span class="fill-remaining-space"></span>
-    <button mat-button>Menu Option 01</button>
-    <button mat-button>Menu Option 02</button>
-    <button mat-button (click)="onLogout()" *ngIf="isLoggedIn">Logout</button>
+  <div class="row">
+    <div class="logo-column">
+      <img src="../../img/logo.jpg" alt="logo">
+      <span> Bem vindo a {{ title }}!</span>
+
+    </div>
+    <div class="login-column">
+      <span class="fill-remaining-space"></span>
+      <button mat-button>opcao 1</button>
+      <button mat-button>opcao 2</button>
+      <button mat-button (click)="onLogout()" *ngIf="isLoggedIn">Logout</button>
+    </div>
+  </div>
+    
 </mat-toolbar>
