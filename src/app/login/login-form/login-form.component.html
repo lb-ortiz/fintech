@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" >
+    <div class="row">
+        
+        <mat-form-field class="full-width-input">
+            <input matInput placeholder="Usuario" formControlName="userName" required>
+            <mat-error *ngIf="isFieldInvalid('userName')">
+             Por favor insira seu usuario
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+            <input matInput type="password" placeholder="Senha" formControlName="password" required>
+            <mat-error *ngIf="isFieldInvalid('userName')">
+                Por favor insira sua senha
+            </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+</form>
+
