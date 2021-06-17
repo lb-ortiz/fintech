@@ -1,6 +1,5 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()" >
     <div class="row">
-        
         <mat-form-field class="full-width-input">
             <input matInput placeholder="Usuario" formControlName="userName" required>
             <mat-error *ngIf="isFieldInvalid('userName')">
@@ -13,7 +12,9 @@
                 Por favor insira sua senha
             </mat-error>
         </mat-form-field>
-        <button mat-raised-button color="primary" type="submit">Login</button>
+        <button mat-raised-button color="primary" type="submit">Entrar</button> 
+        <span class="link" routerLinkActive="active" routerLink="/cadastro">Crie sua conta</span>
+        <router-outlet></router-outlet>
     </div>
 </form>
 

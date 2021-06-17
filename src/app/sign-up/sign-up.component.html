@@ -1,0 +1,30 @@
+<app-login></app-login>
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" >
+    <mat-form-field class="full-width-input">
+        <input matInput placeholder="Nome" formControlName="nome" required>
+        <mat-error *ngIf="isFieldInvalid('nome')">
+            Favor preencher este campo
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+        <input matInput type="password" placeholder="Senha" formControlName="password" required>
+        <mat-error *ngIf="isFieldInvalid('password')">
+            Favor preencher este campo
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+        <input matInput type="password" placeholder="Repita sua senha" formControlName="password2" required>
+        <mat-error *ngIf="isFieldInvalid('password2')">
+            Favor preencher este campo
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+        <input [ngModel]="cpfcnpj | cpfcnpj" matInput placeholder="CPF/CNPJ" formControlName="cpf-cnpj" required (ngModelChange)="cpfcnpj=$event">
+        <mat-error *ngIf="isFieldInvalid('password2')">
+            Favor preencher este campo
+        </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Criar</button>
+</form>
+</div>

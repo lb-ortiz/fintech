@@ -5,23 +5,30 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatRadioModule} from '@angular/material/radio';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from '../app/login/login.component';
 import { LoginFormComponent } from '../app/login/login-form/login-form.component';
+import { SignUpComponent } from '../app/sign-up/sign-up.component';
 import { HomeComponent } from '../app/home/home.component';
 import { HeaderComponent } from '../app/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth/auth.guard';
 import { AuthService } from './auth/auth.service';
+import { CpfCnpjPipe } from '../app/pipes/cpf-cnpj.pipe';
+
 
 @NgModule({
   declarations: [
+    CpfCnpjPipe,
     AppComponent,
     LoginComponent,
     HomeComponent,
     HeaderComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,8 @@ import { AuthService } from './auth/auth.service';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatRadioModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
