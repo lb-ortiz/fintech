@@ -19,7 +19,7 @@ describe('LoginFormComponent', () => {
     fixture.detectChanges();
   });
 
-  it('deve renderizar o componente de login', () => {
+  it('deve renderizar o formulario de login', () => {
     expect(component).toBeTruthy();
   });
 });

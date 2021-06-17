@@ -19,17 +19,4 @@ describe('HomeComponent', () => {
     const home = fixture.componentInstance;
     expect(home).toBeTruthy();
   });
-
-  it(`deve ter o titulo fintech`, () => {
-    const fixture = TestBed.createComponent(HomeComponent);
-    const home = fixture.componentInstance;
-    expect(home.title).toEqual('fintech');
-  });
-
-  it('renderiza o titulo', () => {
-    const fixture = TestBed.createComponent(HomeComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.logo-column span').textContent).toContain('Bem vindo a fintech!');
-  });
 });

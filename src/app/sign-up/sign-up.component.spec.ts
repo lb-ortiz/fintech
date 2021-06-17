@@ -14,16 +14,9 @@ describe('SignUpComponent', () => {
     }).compileComponents();
   }));
 
-  it('deve renderizar a home', () => {
+  it('deve renderizar a tela de cadastro', () => {
     const fixture = TestBed.createComponent(SignUpComponent);
     const home = fixture.componentInstance;
     expect(home).toBeTruthy();
-  });
-
-  it('renderiza o titulo', () => {
-    const fixture = TestBed.createComponent(SignUpComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.logo-column span').textContent).toContain('Bem vindo a fintech!');
   });
 });
